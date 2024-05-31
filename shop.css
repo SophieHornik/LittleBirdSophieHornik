@@ -1,3 +1,5 @@
-html{
-    background-color: rgb(252, 207, 149);
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
