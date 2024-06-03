@@ -2,7 +2,7 @@
 const teamMembers = [
     {
         name: 'Darth Vader',
-        species: 'Human',
+        ageRange: 'Human',
         alive: false,
         saberColor: 'red',
         children:['Luke Skywalker','Leia Organa (Skywalker)'],
@@ -68,7 +68,7 @@ const teamMembers = [
           ${member.name}
             </div>
             <div class="card-body" style="background-color:${backgroundColor};">
-            <p><strong class="chcolor">Species:</strong> ${member.species}</p>
+            <p><strong class="chcolor">Age Range:</strong> ${member.ageRange}</p>
             <p><strong class="chcolor">Status:</strong> ${aliveStatus}</p>
             <p><strong class="chcolor">Children:</strong> ${childrenList}</p>
             <p><strong class="chcolor">Movies:</strong> ${moviesList}</p>
