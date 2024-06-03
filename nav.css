@@ -46,3 +46,8 @@
   text-align: right;
   margin-right: 50px;
 }
+body{
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
