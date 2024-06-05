@@ -8,7 +8,7 @@ const teamMembers = [
         dimensions:'343',
     },
     {
-        name: 'Darth Vader',
+        name: 'train',
         ageRange: '3+',
         description:'dc',
         img:'vader.png',
@@ -52,13 +52,13 @@ const teamMembers = [
             backgroundColor = "#ff914d"
             break
             case '3+':
-            backgroundColor = "gray"
+            backgroundColor = "(223, 223, 223)"
             break
             case 'everyone':
-            backgroundColor = "white"
+            backgroundColor = "(255,255,255)"
             break
             case '':
-            backgroundColor = "(223, 223, 223)"
+            backgroundColor = "gray"
             break
     }
     card.style.backgroundColor = backgroundColor
