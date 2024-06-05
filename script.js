@@ -2,13 +2,24 @@
 const teamMembers = [
     {
         name: 'Darth Vader',
-        ageRange: 'Human',
-        alive: false,
-        saberColor: 'red',
-        children:['Luke Skywalker','Leia Organa (Skywalker)'],
-        movies:['Revenge of the Sith','A New Hope','Empire Strikes Back','Return of the Jedi'],
-        biography:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img:'vader.png'
+        ageRange: 'Toddler',
+        description:'dc',
+        img:'vader.png',
+        dimensions:'343',
+    },
+    {
+        name: 'Darth Vader',
+        ageRange: '3+',
+        description:'dc',
+        img:'vader.png',
+        dimensions:'343',
+    },
+    {
+        name: 'Darth Vader',
+        ageRange: 'everyone',
+        description:'dc',
+        img:'vader.png',
+        dimensions:'343',
     },
 
     ]
@@ -19,7 +30,7 @@ const teamMembers = [
     
     teamMembers.forEach(member => {
         const card = document.createElement('div')
-        card.classList.add('col-md-3', 'm-3')
+    
     
         let aliveStatus
     
@@ -30,32 +41,24 @@ const teamMembers = [
         }
     
     
-    //Create a list of Skills with <li> tags
-    const moviesList = member.movies
-    .map(movies => `<li> ${movies} </li>`).join('')
     
-    const childrenList = member.children
-    .map(children => `<li> ${children} </li>`).join('')
     
     
     //style the background color of the card based off position
     let backgroundColor
     
-    switch(member.saberColor.toLowerCase()){
-        case 'red':
-            backgroundColor = "red"
+    switch(member.ageRange.toLowerCase()){
+        case 'toddler':
+            backgroundColor = "#ff914d"
             break
-            case 'blue':
-            backgroundColor = "blue"
+            case '3+':
+            backgroundColor = "gray"
             break
-            case 'green':
-            backgroundColor = "green"
-            break
-            case 'purple':
-            backgroundColor = "purple"
+            case 'everyone':
+            backgroundColor = "white"
             break
             case '':
-            backgroundColor = "gray"
+            backgroundColor = "(223, 223, 223)"
             break
     }
     card.style.backgroundColor = backgroundColor
@@ -69,11 +72,9 @@ const teamMembers = [
             </div>
             <div class="card-body" style="background-color:${backgroundColor};">
             <p><strong class="chcolor">Age Range:</strong> ${member.ageRange}</p>
-            <p><strong class="chcolor">Status:</strong> ${aliveStatus}</p>
-            <p><strong class="chcolor">Children:</strong> ${childrenList}</p>
-            <p><strong class="chcolor">Movies:</strong> ${moviesList}</p>
-            <p><strong class="chcolor">Biography
-            :</strong> ${member.biography}</p>
+            <p><strong class="chcolor">Dimensions:</strong> ${member.dimensions}</p>
+            <p><strong class="chcolor">Description
+            :</strong> ${member.description}</p>
             </div>
         </div>
       
