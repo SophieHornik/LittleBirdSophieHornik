@@ -2,26 +2,48 @@
 const teamMembers = [
     {
         name: 'Darth Vader',
-        ageRange: 'Toddler',
-        description:'dc',
-        img:'vader.png',
-        dimensions:'343',
-    },
-    {
-        name: 'train',
-        ageRange: '3+',
-        description:'dc',
-        img:'vader.png',
-        dimensions:'343',
+        species: 'Human',
+        saberColor: 'red',
+        description:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
+        img:'vader.png'
     },
     {
         name: 'Darth Vader',
-        ageRange: 'everyone',
-        description:'dc',
-        img:'vader.png',
-        dimensions:'343',
+        species: 'Human',
+        saberColor: 'red',
+        description:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
+        img:'vader.png'
+    },
+    {
+        name: 'Darth Vader',
+        species: 'Human',
+        saberColor: 'red',
+        description:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
+        img:'vader.png'
+    },
+    {
+        name: 'Darth Vader',
+        species: 'Human',
+        saberColor: 'red',
+        description:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
+        img:'vader.png'
+    },
+    {
+        name: 'Darth Vader',
+        species: 'Human',
+        saberColor: 'red',
+        description:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
+        img:'vader.png'
+    },
+    {
+        name: 'Darth Vader',
+        species: 'Human',
+        saberColor: 'red',
+        description:'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
+        img:'vader.png'
     },
 
+    
     ]
     
     function generateTeamCards(){
@@ -30,32 +52,25 @@ const teamMembers = [
     
     teamMembers.forEach(member => {
         const card = document.createElement('div')
+        card.classList.add('col-md-3', 'm-3')
+    
+       
     
     
-        let aliveStatus
-    
-        if(member.alive){
-            aliveStatus = "Living"
-        } else {
-            aliveStatus = "Deceased"
-        }
-    
-    
-    
-    
-    
-    //style the background color of the card based off position
     let backgroundColor
     
-    switch(member.ageRange.toLowerCase()){
-        case 'toddler':
-            backgroundColor = "#ff914d"
+    switch(member.saberColor.toLowerCase()){
+        case 'red':
+            backgroundColor = "red"
             break
-            case '3+':
-            backgroundColor = "(223, 223, 223)"
+            case 'blue':
+            backgroundColor = "blue"
             break
-            case 'everyone':
-            backgroundColor = "(255,255,255)"
+            case 'green':
+            backgroundColor = "green"
+            break
+            case 'purple':
+            backgroundColor = "purple"
             break
             case '':
             backgroundColor = "gray"
@@ -71,8 +86,7 @@ const teamMembers = [
           ${member.name}
             </div>
             <div class="card-body" style="background-color:${backgroundColor};">
-            <p><strong class="chcolor">Age Range:</strong> ${member.ageRange}</p>
-            <p><strong class="chcolor">Dimensions:</strong> ${member.dimensions}</p>
+            <p><strong class="chcolor">Species:</strong> ${member.species}</p>
             <p><strong class="chcolor">Description
             :</strong> ${member.description}</p>
             </div>
