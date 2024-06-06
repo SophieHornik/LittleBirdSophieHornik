@@ -79,7 +79,7 @@ function generateTeamCards() {
 
 
         card.innerHTML = `
-        <div class="card m-5">
+        <div class="card m-1">
             <div class = "card-header text-center">
             <img src="${member.img}" class="img-fluid card-img">
           ${member.name}
