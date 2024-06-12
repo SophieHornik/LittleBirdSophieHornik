@@ -4,37 +4,49 @@ const teamMembers = [
         name: 'Wooden Airplane',
         ageRange: 'Toddlers',
         description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Measures 3.5"H x 7"L x 7"W',
-        img: 'vader.png'
+        img1: 'vader.png',
+        img2: 'vader.png',
+        img3: 'vader.png',
     },
     {
         name: 'Darth Vader',
         ageRange: 'Human',
         description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img: 'vader.png'
+        img1: 'vader.png',
+        img2: 'vader.png',
+        img3: 'vader.png',
     },
     {
         name: 'Darth Vader',
         ageRange: 'Human',
         description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img: 'vader.png'
+        img1: 'vader.png',
+        img2: 'vader.png',
+        img3: 'vader.png',
     },
     {
         name: 'Darth Vader',
         ageRange: 'Human',
         description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img: 'vader.png'
+        img1: 'vader.png',
+        img2: 'vader.png',
+        img3: 'vader.png',
     },
     {
         name: 'Darth Vader',
         ageRange: 'Human',
         description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img: 'vader.png'
+        img1: 'vader.png',
+        img2: 'vader.png',
+        img3: 'vader.png',
     },
     {
         name: 'Darth Vader',
         ageRange: 'Human',
         description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img: 'vader.png'
+        img1: 'vader.png',
+        img2: 'vader.png',
+        img3: 'vader.png',
     },
 
 
@@ -72,11 +84,36 @@ function generateTeamCards() {
         card.innerHTML = `
         <div class="card m-1">
             <div class = "card-header text-center">
-            <img src="${member.img}" class="img-fluid card-img">
+            <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="${member.img1}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="${member.img2}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="${member.img3}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
           ${member.name}
             </div>
             <div class="card-body" style="background-color:${backgroundColor};>
-            <p><strong class="chcolor">Age Range:</strong> ${member.ageRange}</p>
+            <p><strong class="chcolor"><strong>Age Range:</strong> ${member.ageRange}</p>
             <p><strong class="chcolor">Description
             :</strong> ${member.description}</p>
             </div>
