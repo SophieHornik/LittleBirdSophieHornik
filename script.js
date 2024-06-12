@@ -4,9 +4,9 @@ const teamMembers = [
         name: 'Wooden Airplane',
         ageRange: 'Toddlers',
         description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Measures 3.5"H x 7"L x 7"W',
-        img1: 'vader.png',
-        img2: 'vader.png',
-        img3: 'vader.png',
+        img1: 'plane1.jpg',
+        img2: 'plane2.jpg',
+        img3: 'plane3.jpg',
     },
     {
         name: 'Darth Vader',
@@ -82,13 +82,13 @@ function generateTeamCards() {
 
 
         card.innerHTML = `
-        <div class="card m-1">
-            <div class = "card-header text-center">
+        <div class="card m-1" >
+            <div class = "card-header text-center" >
             <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" ></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -110,7 +110,7 @@ function generateTeamCards() {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-          ${member.name}
+         ${member.name}
             </div>
             <div class="card-body" style="background-color:${backgroundColor};>
             <p><strong class="chcolor"><strong>Age Range:</strong> ${member.ageRange}</p>
