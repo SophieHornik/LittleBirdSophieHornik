@@ -54,7 +54,7 @@ body{
 /*footer */
 p.footer-description {
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ff914d;
   display: block;
   font-family: Lato, sans-serif;
   font-size: 17px;
@@ -71,4 +71,7 @@ strong.link-email-footer {
 }
 .centerme{
   text-align: center
+}
+a{
+  color: white;
 }
