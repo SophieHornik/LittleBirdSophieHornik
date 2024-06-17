@@ -13,28 +13,28 @@ const teamMembers = [
         img1: 'train1.jpg',
     },
     {
-        name: 'Darth Vader',
-        ageRange: 'Human',
-        description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img1: 'vader.png',
+        name: 'Wooden Boat',
+        ageRange: 'All Ages',
+        description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg "lobster people." Size: 10.5"W x 3.5"H.',
+        img1: 'boat2 (2).jpg',
     },
     {
-        name: 'Darth Vader',
-        ageRange: 'Human',
-        description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img1: 'vader.png',
+        name: 'Wooden Animal Set',
+        ageRange: 'Toddlers',
+        description: 'This collection features a variety of intricately detailed animals made from genuine beech wood. With dimensions of 84cm L x 15cm H x 10cm W, the set is large enough to provide endless imaginative play. Each piece is designed with a fully ecological design, making it a perfect addition to any playroom.',
+        img1: 'animal.jpg',
     },
     {
-        name: 'Darth Vader',
-        ageRange: 'Human',
-        description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img1: 'vader.png',
+        name: 'Wooden Block Set',
+        ageRange: '3+',
+        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).',
+        img1: 'block.jpg',
     },
     {
-        name: 'Darth Vader',
-        ageRange: 'Human',
-        description: 'Darth Vader, born as Anakin Skywalker, was a central figure in the Star Wars saga. Initially a heroic Jedi Knight, he fell to the dark side of the Force due to fear, anger, and manipulation by Emperor Palpatine. Clad in menacing black armor and wielding a red lightsaber, Vader became a symbol of tyranny in the galaxy. Despite his villainous deeds, a flicker of redemption remained within him, ultimately leading to his self-sacrifice to save his son, Luke Skywalker, and destroy the Emperor, bringing balance to the Force.',
-        img1: 'vader.png',
+        name: 'Wooden Car',
+        ageRange: 'All Ages',
+        description: 'This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.',
+        img1: 'car.jpg',
     },
 
 
@@ -61,7 +61,7 @@ function generateTeamCards() {
                 backgroundColor = "white"
                 break
             case '3+':
-                backgroundColor = "gray+"
+                backgroundColor = "gray"
                 break
             case '':
                 backgroundColor = "transparent"
