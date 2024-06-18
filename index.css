@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .navbar {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .title {
+    text-align: center;
+    padding: 50px;
+  }
+
+
+
+Nav.css
+
+#logo{
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url("logo.png");
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-size: 80px;
+  background-position: center,center;
+  background-repeat: no-repeat;
+}
+#logo:hover{
+  height: 100px;
+ width: 100px;
+ background-color: transparent;
+ opacity: .6;
+ border-radius: 100%;
+}
+.nav-link{
+ color: #ff914d;
+ font-family: "SugarAndSpice";
+ font-size: 3rem;
+
+}
+.nav-link:hover{
+  color:  rgb(223, 223, 223);
+  font-family: "SugarAndSpice";
+ font-size: 3rem;
+ text-shadow: 2px 2px 2px black;
+}
+.nav-link:active{
+color:  rgb(223, 223, 223);;
+font-family: "SugarAndSpice";
+font-size: 3rem;
+text-shadow: 2px 2px 2px black;
+}
+
+ @font-face {
+  font-family: "SugarAndSpice";
+  src: url(/Sugar&Spicedemo.ttf);
+}
+
+.nav-item{
+text-align: right;
+margin-right: 50px;
+}
+body{
+background-image: url('bg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+p{
+  padding-right: 2rem;
+}
+
+
