@@ -27,7 +27,7 @@ const teamMembers = [
     {
         name: 'Wooden Block Set',
         ageRange: '3+',
-        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).<br><br><br>',
+        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).',
         img1: 'block.jpg',
     },
     {
