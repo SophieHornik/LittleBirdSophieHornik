@@ -40,11 +40,11 @@
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="Reviews.html">Reviews</a>
+            <a class="nav-link" aria-current="page" href="shop.html">Reviews</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="shop.html">Shop</a>
+            <a class="nav-link" aria-current="page" href="#teamCards">Shop</a>
           </li>
         </ul>
         </li>
@@ -55,6 +55,11 @@
 </div>
 <!-- Nav end -->
 <main>
+  <main role="main">
+    <div class="content-wrapper">
+      <p id="press-quote">I recently visited this charming wooden toy shop and was absolutely delighted with the experience. The craftsmanship of the toys is exceptional, and you can feel the love and care that goes into each piece. My kids adore their new wooden train set, and I love that it is both eco-friendly and durable. Highly recommend this shop for anyone looking for unique, high-quality toys!-Sarah M</p>
+    </div>
+  </main>
   <div class="container-fluid">
       <div class="row mt-5 justify-content-center" id="teamCards">
       </div>
@@ -90,6 +95,23 @@
     </div>
   </div>
 </div>
+<script>
+  let quotesArray = ['"I recently visited this charming wooden toy shop and was absolutely delighted with the experience. The craftsmanship of the toys is exceptional, and you can feel the love and care that goes into each piece. My kids adore their new wooden train set, and I love that it is both eco-friendly and durable. Highly recommend this shop for anyone looking for unique, high-quality toys!"— Sarah M',
+  '"A wonderful find! This wooden toy shop is a gem. The staff were incredibly friendly and knowledgeable, helping me choose the perfect birthday gift for my niece. She loved her wooden car, and I was impressed by the detailed artistry. The store itself is warm and inviting, making the shopping experience even more enjoyable. Will definitely be back for more!"— John D',
+  '"I purchased a beautiful handcrafted wooden plane from this store, and it exceeded all my expectations. The attention to detail is amazing, and my daughter has not stopped playing with it since we brought it home. The staff were so helpful, making sure I found exactly what I was looking for. This shop is a must-visit for anyone looking for special, timeless toys."— Emily T',
+  '"Visiting this wooden toy shop was a delightful experience. The quality of the toys is outstanding, and you can tell they are built to last. I bought a set of wooden blocks for my son, and he absolutely loves them. The variety of toys available is fantastic, and the staff are friendly and eager to assist. I will be recommending this shop to all my friends and family."— Dan R',
+  '"This wooden toy shop is amazing! I bought a beautiful wooden train for my daughters birthday, and it is now her favorite toy. The craftsmanship is incredible, and it is clear that a lot of care goes into making each toy. The store is so cozy and welcoming, and the staff were wonderful in helping me find the perfect gift. I will definitely be returning!"— Laura B',
+  '"I had a fantastic experience at this wooden toy shop. The selection of toys is impressive, and the quality is top-notch. I purchased a wooden car set for my son, and he has been playing with it non-stop. The staff were extremely helpful and friendly, making the shopping experience enjoyable. This is now my go-to place for all my toy needs. Highly recommended!"— David H',
+  '"What a lovely shop! I recently bought a wooden alphabet puzzle for my nephew, and it was a hit. The toys here are beautifully made and perfect for little hands. The staff were so helpful and kind, making sure I found exactly what I needed. The shop itself is adorable and has a wonderful selection. I can not wait to come back and buy more toys. Five stars all the way!"— Jessica R'
+  ]
+  
+  let randomNumber = Math.floor(Math.random()*quotesArray.length) //generating a random integer between 0-6 and setting it to the variable randomNumber
+  
+  document.getElementById('press-quote').textContent = quotesArray[randomNumber];
+  
+  
+  
+  </script>
 </div>
 </div>
 </div>
