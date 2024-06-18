@@ -27,7 +27,7 @@ const teamMembers = [
     {
         name: 'Wooden Block Set',
         ageRange: '3+',
-        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).',
+        description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).<br><br><br>',
         img1: 'block.jpg',
     },
     {
@@ -75,7 +75,7 @@ function generateTeamCards() {
            
       <img src="${member.img1}" class="d-block w-100" alt="...">
     
-         ${member.name}
+         <h1 class="name">${member.name}</h1>
             </div>
             <div class="card-body" style="background-color:${backgroundColor};>
             <p><strong class="chcolor"><strong>Age Range:</strong> ${member.ageRange}</p>

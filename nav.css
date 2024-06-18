@@ -63,11 +63,13 @@ p.footer-description {
   line-height: 1.5em;
   margin-bottom: 16px;
   margin-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 strong.link-email-footer {
   box-sizing: border-box;
   font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
 }
 .centerme{
   text-align: center

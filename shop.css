@@ -1,5 +1,5 @@
 .chcolor{
-    color:${backgroundColor} ;
+    font-size: 1.5;
 }
 #press-quote{
     color: gray;
@@ -7,4 +7,14 @@
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.name{
+    color:#ff914d ;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+}
+.cards{
+    align-items: stretch
 }
