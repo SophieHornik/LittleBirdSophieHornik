@@ -46,7 +46,7 @@ function generateTeamCards() {
 
     teamMembers.forEach(member => {
         const card = document.createElement('div')
-        card.classList.add('col-md-3', 'm-3')
+        card.classList.add('col-md-4', 'col-sm-6','col-lg-3','m-3')
 
 
 
